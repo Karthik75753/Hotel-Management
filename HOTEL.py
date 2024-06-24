@@ -73,13 +73,13 @@ class Hotel:
                 elif c==2:
                     q=int(input("Enter Quantity: "))
                     self.rooms[Room_no]['roomservice'] += 70*q
-                if c==3:
+                elif c==3:
                     q=int(input("Enter Quantity: "))
                     self.rooms[Room_no]['roomservice'] += 150*q
-                if c==4:
+                elif c==4:
                     q=int(input("Enter Quantity: "))
                     self.rooms[Room_no]['roomservice'] += 120*q
-                if c==5:
+                elif c==5:
                     q=int(input("Enter Quantity: "))
                     self.rooms[Room_no]['roomservice'] += 100*q
                 elif c==6:
@@ -157,10 +157,10 @@ class Hotel:
                 Name = input("Enter Customer name: ")
                 Address = input("Enter Customer address: ")
                 Phono = input("Enter Customer Phono: ")
-                self.check_in(Name, Address, Phono)
                 while( len(Phono) < 10):
                     print("****************Enter 10 digit number**********************: ")
                     Phono = input("Enter Customer Phono: ")
+                self.check_in(Name, Address, Phono)
 
             elif choice == 2:
                 Room_no = int(input("Enter room number: "))
